@@ -22,6 +22,7 @@ export default function Contact() {
                   alt="Des chiens"
                   layout="fill"
                   objectFit="cover"
+                  placeholder="blur"
                 />
               </div>
             </div>

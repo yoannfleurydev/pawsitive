@@ -111,6 +111,7 @@ export default function Home() {
               alt="Aurore et ses chiens"
               layout="fill"
               objectFit="cover"
+              placeholder="blur"
             />
           </div>
         </main>
@@ -132,6 +133,7 @@ export default function Home() {
                           alt={person.alt}
                           layout="fill"
                           objectFit="cover"
+                          placeholder="blur"
                         />
                       </div>
                       <div className="sm:col-span-2">
