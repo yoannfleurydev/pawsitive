@@ -119,6 +119,17 @@ export function Nav() {
                 Contactez-moi
               </ActiveLink>
             </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              <div className="flex items-center px-4">
+                <a
+                  href="tel:+33606060606"
+                  className="text-brand-600 inline-flex items-center"
+                >
+                  <PhoneIcon className="w-4 h-4 text-yellow-400 mr-2" />
+                  06 06 06 06 06
+                </a>
+              </div>
+            </div>
           </Disclosure.Panel>
         </>
       )}
