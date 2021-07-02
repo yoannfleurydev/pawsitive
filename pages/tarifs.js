@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Nav } from "../components/Nav";
-import heroImage from "../public/assets/hero.jpg";
+import { Footer } from "../components/Footer";
 
 /* This example requires Tailwind CSS v2.0+ */
 import { CheckIcon } from "@heroicons/react/outline";
@@ -141,6 +140,7 @@ export default function Tarifs() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
