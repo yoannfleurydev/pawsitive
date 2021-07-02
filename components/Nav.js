@@ -34,7 +34,11 @@ export function Nav() {
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  <Logo className="text-brand-600 w-16" />
+                  <Link href="/">
+                    <a>
+                      <Logo className="text-brand-600 w-16" />
+                    </a>
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-brand-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
