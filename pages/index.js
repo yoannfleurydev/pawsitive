@@ -7,38 +7,20 @@ import testimonial1Image from "../public/assets/testimonial-01.png";
 import testimonial2Image from "../public/assets/testimonial-02.png";
 import { CheckIcon } from "@heroicons/react/outline";
 
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ]
-  }
-  ```
-*/
 const people = [
   {
-    name: "Lucille Grilo",
-    src: testimonial1Image,
-    alt: "Lucille Grilo",
-    bio: "C’est sans aucun doute la personne que je recommanderai et vers qui je me tournerai pour m’aider à éduquer mon chien tout en me permettant d’apprendre à le connaître pour créer ce lien si particulier qu’on peut avoir avec eux.",
-  },
-  {
     name: "Agathe Gin",
-    src: testimonial2Image,
+    src: testimonial1Image,
     alt: "Lucille Grilo",
     bio: "Aurore est une vraie amoureuse des animaux. Elle se met toujours à la place des animaux pour comprendre leur comportement afin de nous aider à mieux vivre ensemble. Elle s'adapte à chaque chien pour trouver une solution à nos problèmes. Je recommande les yeux fermés.",
   },
+  {
+    name: "Lucille Grilo",
+    src: testimonial2Image,
+    alt: "Lucille Grilo",
+    bio: "C’est sans aucun doute la personne que je recommanderai et vers qui je me tournerai pour m’aider à éduquer mon chien tout en me permettant d’apprendre à le connaître pour créer ce lien si particulier qu’on peut avoir avec eux.",
+  },
 ];
-
-/* This example requires Tailwind CSS v2.0+ */
 
 const features = [
   {
