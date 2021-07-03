@@ -41,7 +41,6 @@ export function Nav() {
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  {/* Current: "border-brand-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <ActiveLink
                     href="/"
                     className="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
@@ -74,7 +73,7 @@ export function Nav() {
                   className="text-brand-600 inline-flex items-center"
                 >
                   <PhoneIcon className="w-4 h-4 text-yellow-400 mr-2" />
-                  06 06 06 06 06
+                  06 13 13 62 12
                 </a>
               </div>
               <div className="-mr-2 flex items-center sm:hidden">
@@ -93,7 +92,6 @@ export function Nav() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="pt-2 pb-3 space-y-1">
-              {/* Current: "bg-brand-50 border-brand-500 text-brand-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
               <ActiveLink
                 href="/"
                 className="block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
@@ -125,7 +123,7 @@ export function Nav() {
                 className="text-brand-600 flex items-center p-4"
               >
                 <PhoneIcon className="w-4 h-4 text-yellow-400 mr-2" />
-                06 06 06 06 06
+                06 13 13 62 12
               </a>
             </div>
           </Disclosure.Panel>

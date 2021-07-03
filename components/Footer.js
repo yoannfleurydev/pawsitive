@@ -1,8 +1,7 @@
-/* This example requires Tailwind CSS v2.0+ */
 const navigation = [
   {
     name: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/AngAurore/",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -15,7 +14,7 @@ const navigation = [
   },
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/pawsitiveeduc/",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -46,7 +45,7 @@ export function Footer() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-yellow-400">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Pawsitive. Tous droits réservés.
           </p>
         </div>
       </div>
