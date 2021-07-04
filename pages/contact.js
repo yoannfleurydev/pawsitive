@@ -1,17 +1,14 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Layout } from "../components/Layout";
 import { PhoneIcon, MailIcon } from "@heroicons/react/outline";
-import dogsImage from "../public/assets/dogs.jpg";
+import Image from "next/image";
 
-/* This example requires Tailwind CSS v2.0+ */
+import { Layout } from "@/components/Layout";
+import { Seo } from "@/components/Seo";
+import dogsImage from "@/public/assets/dogs.jpg";
 
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Contact | Pawsitive</title>
-      </Head>
+      <Seo title="Contact" />
       <Layout>
         <div className="flex-1 relative bg-white">
           <div className="lg:absolute lg:inset-0">
@@ -47,13 +44,20 @@ export default function Contact() {
                       </dd>
                     </div>
                     <div className="mt-6">
-                      <dt className="sr-only">Phone number</dt>
+                      <dt className="sr-only">Téléphone</dt>
                       <dd className="flex">
                         <PhoneIcon
                           className="flex-shrink-0 h-6 w-6 text-gray-400"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">+1 (555) 123-4567</span>
+                        <span className="ml-3">
+                          <a
+                            href="tel:+33613136212"
+                            title="Contacter Pawsitive par téléphone"
+                          >
+                            +33613136212
+                          </a>
+                        </span>
                       </dd>
                     </div>
                     <div className="mt-3">
@@ -63,17 +67,17 @@ export default function Contact() {
                           className="flex-shrink-0 h-6 w-6 text-gray-400"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">support@example.com</span>
+                        <span className="ml-3">
+                          <a
+                            href="mailto:aurore.angevin@hotmail.fr"
+                            title="Contacter Pawsitive par courrier électronique"
+                          >
+                            aurore.angevin@hotmail.fr
+                          </a>
+                        </span>
                       </dd>
                     </div>
                   </dl>
-                  <p className="mt-6 text-base text-gray-500">
-                    Looking for careers?{" "}
-                    <a href="#" className="font-medium text-gray-700 underline">
-                      View all job openings
-                    </a>
-                    .
-                  </p>
                 </div>
               </div>
             </div>

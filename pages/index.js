@@ -1,11 +1,12 @@
-import Head from "next/head";
+import { CheckIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
-import { Layout } from "../components/Layout";
-import heroImage from "../public/assets/hero.jpg";
-import testimonial1Image from "../public/assets/testimonial-01.png";
-import testimonial2Image from "../public/assets/testimonial-02.png";
-import { CheckIcon } from "@heroicons/react/outline";
+
+import { Layout } from "@/components/Layout";
+import { Seo } from "@/components/Seo";
+import heroImage from "@/public/assets/hero.jpg";
+import testimonial1Image from "@/public/assets/testimonial-01.png";
+import testimonial2Image from "@/public/assets/testimonial-02.png";
 
 const people = [
   {
@@ -47,11 +48,8 @@ const features = [
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Pawsitive</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <Seo />
       <Layout>
         <main className="lg:relative">
           <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
@@ -179,6 +177,6 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-    </div>
+    </>
   );
 }

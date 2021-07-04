@@ -1,8 +1,7 @@
-import Head from "next/head";
-import { Layout } from "../components/Layout";
-
-/* This example requires Tailwind CSS v2.0+ */
 import { CheckIcon } from "@heroicons/react/outline";
+import Head from "next/head";
+
+import { Layout } from "@/components/Layout";
 
 const tiers = [
   {

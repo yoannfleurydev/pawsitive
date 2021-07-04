@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps }) {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1e126e" />
-        <meta name="msapplication-TileColor" content="#1e126e" />
-        <meta name="theme-color" content="#1e126e" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#04047b" />
+        <meta name="msapplication-TileColor" content="#04047b" />
+        <meta name="theme-color" content="#04047b" />
       </Head>
       <Component {...pageProps} />
     </>

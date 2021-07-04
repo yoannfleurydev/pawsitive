@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const navigation = [
   {
     name: "Facebook",
@@ -45,7 +47,10 @@ export function Footer() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-yellow-400">
-            &copy; {new Date().getFullYear()} Pawsitive. Tous droits réservés.
+            &copy; {new Date().getFullYear()} Pawsitive. Tous droits réservés ·{" "}
+            <Link href="/mentions-legales">
+              <a>Mentions Légales</a>
+            </Link>
           </p>
         </div>
       </div>

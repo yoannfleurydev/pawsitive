@@ -1,9 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, PhoneIcon, XIcon } from "@heroicons/react/outline";
-import { Logo } from "./Logo";
-import { useRouter } from "next/router";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
+import { Logo } from "./Logo";
 
 const ActiveLink = ({
   href,
