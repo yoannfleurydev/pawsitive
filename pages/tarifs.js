@@ -1,32 +1,24 @@
-import { CheckIcon } from "@heroicons/react/outline";
 import Head from "next/head";
+import Link from "next/link";
 
 import { Layout } from "@/components/Layout";
+import { TierCard } from "@/components/TierCard";
 
 const tiers = [
   {
-    name: "Standard",
-    href: "#",
-    priceMonthly: 49,
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    features: [
-      "Pariatur quod similique",
-      "Sapiente libero doloribus modi nostrum",
-      "Vel ipsa esse repudiandae excepturi",
-      "Itaque cupiditate adipisci quibusdam",
+    name: "Éducation classique",
+    priceSession: 40,
+    plan: { price: 170, numberOfSession: 5 },
+    informations: [
+      "1ère séance d’environ 1h30 à domicile pour discuter du chien, des soucis rencontrés.",
+      "Séances suivantes à domicile, sur mon terrain ou en extérieur suivant les besoins.",
     ],
   },
   {
-    name: "Enterprise",
-    href: "#",
-    priceMonthly: 79,
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    features: [
-      "Pariatur quod similique",
-      "Sapiente libero doloribus modi nostrum",
-      "Vel ipsa esse repudiandae excepturi",
-      "Itaque cupiditate adipisci quibusdam",
-    ],
+    name: "Éducation collective",
+    priceSession: 20,
+    plan: { price: 85, numberOfSession: 5 },
+    informations: ["Séance sur mon terrain ou en extérieur suivant le groupe."],
   },
 ];
 
@@ -56,86 +48,127 @@ export default function Tarifs() {
               <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
                   {tiers.map((tier) => (
-                    <div
-                      key={tier.name}
-                      className="flex flex-col rounded-lg shadow-lg overflow-hidden"
-                    >
-                      <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
-                        <div>
-                          <h3
-                            className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-brand-100 text-brand-600"
-                            id="tier-standard"
-                          >
-                            {tier.name}
-                          </h3>
-                        </div>
-                        <div className="mt-4 flex items-baseline text-6xl font-extrabold">
-                          ${tier.priceMonthly}
-                          <span className="ml-1 text-2xl font-medium text-gray-500">
-                            /mo
-                          </span>
-                        </div>
-                        <p className="mt-5 text-lg text-gray-500">
-                          {tier.description}
-                        </p>
-                      </div>
-                      <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
-                        <ul className="space-y-4">
-                          {tier.features.map((feature) => (
-                            <li key={feature} className="flex items-start">
-                              <div className="flex-shrink-0">
-                                <CheckIcon
-                                  className="h-6 w-6 text-green-500"
-                                  aria-hidden="true"
-                                />
-                              </div>
-                              <p className="ml-3 text-base text-gray-700">
-                                {feature}
-                              </p>
-                            </li>
-                          ))}
-                        </ul>
-                        <div className="rounded-md shadow">
-                          <a
-                            href={tier.href}
-                            className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900"
-                            aria-describedby="tier-standard"
-                          >
-                            Get started
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+                    <TierCard tier={tier} key={tier.name} />
                   ))}
                 </div>
               </div>
             </div>
-            <div className="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
-              <div className="max-w-md mx-auto lg:max-w-5xl">
-                <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
-                  <div className="flex-1">
-                    <div>
-                      <h3 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white text-gray-800">
-                        Discounted
-                      </h3>
+            <h3 className="text-3xl font-bold text-brand-600 text-center mt-8">
+              Mes autres prestations
+            </h3>
+            <section>
+              <div className="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+                <div className="max-w-md mx-auto lg:max-w-5xl">
+                  <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+                    <div className="flex-1">
+                      <h4 className="inline-flex py-1 text-xl font-bold tracking-wide text-brand-600">
+                        Initiation agility / obéissance / tricks
+                      </h4>
+                      <div className="mt-4 text-lg text-gray-600">
+                        Sur mon terrain
+                      </div>
                     </div>
-                    <div className="mt-4 text-lg text-gray-600">
-                      Get full access to all of standard license features for
-                      solo projects that make less than $20k gross revenue for{" "}
-                      <span className="font-semibold text-gray-900">$29</span>.
+                    <div className="mt-6 lg:mt-0 lg:ml-10 lg:flex-shrink-0 flex flex-col items-end">
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        30€
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          par séance
+                        </span>
+                      </div>
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        <span className="mr-1 text-lg font-medium text-gray-500">
+                          Forfait
+                        </span>
+                        105€
+                        <span className="mx-1 text-lg font-medium text-gray-500">
+                          pour
+                        </span>
+                        5
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          séances
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                    <a
-                      href="#"
-                      className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-                    >
-                      Buy Discounted License
-                    </a>
                   </div>
                 </div>
               </div>
-            </div>
+
+              <div className="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+                <div className="max-w-md mx-auto lg:max-w-5xl">
+                  <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+                    <div className="flex-1">
+                      <h4 className="inline-flex py-1 text-xl font-bold tracking-wide text-brand-600">
+                        Balade pour particulier
+                      </h4>
+                    </div>
+                    <div className="mt-6 lg:mt-0 lg:ml-10 lg:flex-shrink-0 flex flex-col items-end">
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        20€
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          la balade d'1 heure
+                        </span>
+                      </div>
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        <span className="mr-1 text-lg font-medium text-gray-500">
+                          Forfait
+                        </span>
+                        50€
+                        <span className="mx-1 text-lg font-medium text-gray-500">
+                          pour
+                        </span>
+                        3
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          balade par semaine
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+                <div className="max-w-md mx-auto lg:max-w-5xl">
+                  <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+                    <div className="flex-1">
+                      <h4 className="inline-flex py-1 text-xl font-bold tracking-wide text-brand-600">
+                        Désensibilisation aux chiens
+                      </h4>
+                    </div>
+                    <div className="mt-6 lg:mt-0 lg:ml-10 lg:flex-shrink-0 flex flex-col items-end">
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        20€
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          par séance
+                        </span>
+                      </div>
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        <span className="mr-1 text-lg font-medium text-gray-500">
+                          Forfait
+                        </span>
+                        50€
+                        <span className="mx-1 text-lg font-medium text-gray-500">
+                          pour
+                        </span>
+                        3
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          séances
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 relative max-w-md mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+                <div className="rounded-md shadow">
+                  <Link href="/contact">
+                    <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-yellow-900 bg-yellow-400 hover:bg-yellow-500 md:py-4 md:text-lg md:px-10">
+                      Contactez-moi
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </Layout>
