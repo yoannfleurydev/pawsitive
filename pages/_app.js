@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#04047b" />
         <meta name="msapplication-TileColor" content="#04047b" />
         <meta name="theme-color" content="#04047b" />
+        <meta name="robots" content="all" />
       </Head>
       <Component {...pageProps} />
     </>

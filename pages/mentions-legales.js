@@ -1,9 +1,14 @@
+import Head from "next/head";
+
 import { Layout } from "@/components/Layout";
 import { Seo } from "@/components/Seo";
 
 export default function MentionsLegales() {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex,nofollow" />
+      </Head>
       <Seo title="Mentions Légales" />
       <Layout>
         <h2 className="text-4xl font-bold text-brand-600 text-center mt-8">
