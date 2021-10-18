@@ -22,9 +22,9 @@ export default function MentionsLegales() {
           </p>
           <p>
             Inscrit au registre du commerce et des sociétés sous le numéro SIRET
-            TODO
+            89058657100014
           </p>
-          <p>dont le siège social se situe au TODO.</p>
+          <p>dont le siège social se situe à La Noé blanche 35470.</p>
           <p>Téléphone : 06 13 13 62 12 Mail : aurore.angevin@hotmail.fr</p>
         </section>
         <section>

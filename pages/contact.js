@@ -29,18 +29,13 @@ export default function Contact() {
               <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
                 <div className="max-w-lg mx-auto">
                   <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                    Get in touch
+                    Me contacter
                   </h2>
-                  <p className="mt-3 text-lg leading-6 text-gray-500">
-                    Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                    volutpat massa dictumst amet. Sapien tortor lacus arcu.
-                  </p>
                   <dl className="mt-8 text-base text-gray-500">
                     <div>
-                      <dt className="sr-only">Postal address</dt>
+                      <dt className="sr-only">Adresse</dt>
                       <dd>
-                        <p>742 Evergreen Terrace</p>
-                        <p>Springfield, OR 12345</p>
+                        <p>La Noé blanche 35470</p>
                       </dd>
                     </div>
                     <div className="mt-6">

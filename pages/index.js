@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CallToAction } from "@/components/CallToAction";
 import { Layout } from "@/components/Layout";
 import { Seo } from "@/components/Seo";
-import heroImage from "@/public/assets/hero.jpg";
+import heroImage from "@/public/assets/hero2.jpg";
 import testimonial1Image from "@/public/assets/testimonial-01.png";
 import testimonial2Image from "@/public/assets/testimonial-02.png";
 
