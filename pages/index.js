@@ -66,7 +66,7 @@ export default function Home() {
               </h1>
               <p className="mt-3 max-w-md mx-auto text-md text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl">
                 Je m’appelle Aurore et vous accompagne avec votre compagnon
-                avant ou après l’adoption.
+                avant et après l’adoption.
               </p>
               <CallToAction />
             </div>
