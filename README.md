@@ -1,4 +1,4 @@
-# Pawsitive
+# 🐾 Pawsitive
 
 Pawsitive is Aurore's company. She is a french dog trainer and this repository is the source code of her website.
 
