@@ -159,6 +159,38 @@ export default function Tarifs() {
                 </div>
               </div>
 
+              <div className="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+                <div className="max-w-md mx-auto lg:max-w-5xl">
+                  <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+                    <div className="flex-1">
+                      <h4 className="inline-flex py-1 text-xl font-bold tracking-wide text-brand-600">
+                        Déplacements
+                      </h4>
+                    </div>
+                    <div className="mt-6 lg:mt-0 lg:ml-10 lg:flex-shrink-0 flex flex-col items-end">
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        <span className="mr-1 text-lg font-medium text-gray-500">
+                          jusqu’à
+                        </span>{" "}
+                        25km
+                        <span className="ml-1 text-lg font-medium text-gray-500">
+                          autours de la Noé Blanche sans frais de déplacement
+                        </span>
+                      </div>
+                      <div className="mt-4 flex items-baseline text-xl font-bold">
+                        <span className="mr-1 text-lg font-medium text-gray-500">
+                          et ensuite
+                        </span>
+                        1€/km
+                        <span className="mx-1 text-lg font-medium text-gray-500">
+                          en plus
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="mt-4 relative max-w-md mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
                 <div className="rounded-md shadow">
                   <Link href="/contact">
