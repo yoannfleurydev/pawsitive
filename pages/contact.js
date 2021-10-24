@@ -14,20 +14,27 @@ export default function Contact() {
           <div className="lg:absolute lg:inset-0">
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
               <div className="relative h-72 w-full lg:absolute lg:h-full">
-                <Image
-                  src={dogsImage}
-                  alt="Des chiens"
-                  layout="fill"
-                  objectFit="cover"
-                  placeholder="blur"
-                />
+                <a
+                  href="https://vanessagarciaphotographie.fr"
+                  title="Photographe | Vanessa Garcia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={dogsImage}
+                    alt="Des chiens"
+                    layout="fill"
+                    objectFit="cover"
+                    placeholder="blur"
+                  />
+                </a>
               </div>
             </div>
           </div>
           <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
             <div className="lg:pr-8">
               <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-                <div className="max-w-lg mx-auto">
+                <div className="max-w-lg ml-auto">
                   <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
                     Me contacter
                   </h2>

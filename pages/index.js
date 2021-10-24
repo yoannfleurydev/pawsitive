@@ -72,13 +72,20 @@ export default function Home() {
             </div>
           </div>
           <div className="relative w-full h-64 overflow-hidden sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-            <Image
-              src={heroImage}
-              alt="Aurore et ses chiens"
-              layout="fill"
-              objectFit="cover"
-              placeholder="blur"
-            />
+            <a
+              href="https://vanessagarciaphotographie.fr"
+              title="Photographe | Vanessa Garcia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={heroImage}
+                alt="Aurore et ses chiens"
+                layout="fill"
+                objectFit="cover"
+                placeholder="blur"
+              />
+            </a>
           </div>
         </main>
         <div className="bg-brand-700">
@@ -93,14 +100,21 @@ export default function Home() {
                   <li key={person.name}>
                     <div className="space-y-4 sm:grid sm:grid-cols-3 sm:gap-6 sm:space-y-0 lg:gap-8">
                       <div className="h-0 aspect-w-3 aspect-h-3 sm:aspect-w-3 sm:aspect-h-4">
-                        <Image
-                          src={person.src}
-                          className="shadow-lg rounded-lg"
-                          alt={person.alt}
-                          layout="fill"
-                          objectFit="cover"
-                          placeholder="blur"
-                        />
+                        <a
+                          href="https://vanessagarciaphotographie.fr"
+                          title="Photographe | Vanessa Garcia"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            src={person.src}
+                            className="shadow-lg rounded-lg"
+                            alt={person.alt}
+                            layout="fill"
+                            objectFit="cover"
+                            placeholder="blur"
+                          />
+                        </a>
                       </div>
                       <div className="sm:col-span-2">
                         <div className="space-y-4">
