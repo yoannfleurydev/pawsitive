@@ -36,7 +36,7 @@ export function Nav() {
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
                   <Link href="/">
-                    <a>
+                    <a title="Page d’accueil">
                       <Logo className="text-brand-600 w-24" />
                     </a>
                   </Link>

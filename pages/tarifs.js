@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { Layout } from "@/components/Layout";
+import { Seo } from "@/components/Seo";
 import { TierCard } from "@/components/TierCard";
 
 const tiers = [
@@ -25,9 +26,10 @@ const tiers = [
 export default function Tarifs() {
   return (
     <>
-      <Head>
-        <title>Tarifs | Pawsitive</title>
-      </Head>
+      <Seo
+        title="Tarifs"
+        description="Les tarifs de Pawsitive éducation canine"
+      />
       <Layout>
         <div className="bg-brand-700">
           <div className="pt-12 sm:pt-16 lg:pt-24">
@@ -105,7 +107,7 @@ export default function Tarifs() {
                       <div className="mt-4 flex items-baseline text-xl font-bold">
                         20€
                         <span className="ml-1 text-lg font-medium text-gray-500">
-                          la balade d'1 heure
+                          la balade d&apos;1 heure
                         </span>
                       </div>
                       <div className="mt-4 flex items-baseline text-xl font-bold">
