@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 
 import { CallToAction } from "@/components/CallToAction";
@@ -8,6 +9,9 @@ import searchImage from "@/public/assets/search.jpg";
 export default function Custom404() {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex,nofollow" />
+      </Head>
       <Seo title="404" />
       <Layout>
         <div className="relative bg-white flex-1">
@@ -30,8 +34,8 @@ export default function Custom404() {
                   Page non trouvée
                 </h2>
                 <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                  La page que vous recherchez n'est pas disponible ou n'existe
-                  pas sur ce site
+                  La page que vous recherchez n&apos;est pas disponible ou
+                  n&apos;existe pas sur ce site
                 </h3>
                 <CallToAction />
               </div>

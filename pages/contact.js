@@ -8,7 +8,10 @@ import dogsImage from "@/public/assets/dogs.jpg";
 export default function Contact() {
   return (
     <>
-      <Seo title="Contact" />
+      <Seo
+        title="Contact"
+        description="Toutes les informations pour contacter Pawsitive, éducation canine"
+      />
       <Layout>
         <div className="flex-1 relative bg-white">
           <div className="lg:absolute lg:inset-0">
